@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Quiz System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="auth">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div id="quizContainer" class="hidden">
+        <h2>Take the Quiz</h2>
+        <div id="quizQuestions"></div>
+        <button id="submitQuiz" class="hidden">Submit Quiz</button>
+    </div>
+
+    <div id="leaderboard" class="hidden">
+        <h2>Leaderboard</h2>
+        <ul id="highScores"></ul>
+        <button id="resetLeaderboard">Reset Leaderboard</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

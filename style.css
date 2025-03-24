@@ -1,0 +1,108 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Changed from height to min-height */
+    margin: 0;
+    color: #333;
+}
+
+#auth, #quizContainer, #leaderboard {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    overflow: auto; /* Added to handle overflow */
+}
+
+h2 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+
+#quizQuestions {
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 15px;
+}
+
+.question p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    padding: 8px;
+    background-color: #f1f1f1;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+label:hover {
+    background-color: #e8e8e8;
+}
+
+#submitQuiz {
+    background-color: #008CBA;
+}
+
+#submitQuiz:hover {
+    background-color: #007B9E;
+}
+
+#leaderboard ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#leaderboard li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+}
+
+#resetLeaderboard {
+    background-color: #f44336; /* Red color for reset button */
+}
+
+#resetLeaderboard:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
